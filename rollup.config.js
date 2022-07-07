@@ -4,17 +4,15 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import { terser } from "rollup-plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import multi from '@rollup/plugin-multi-entry';
+
 const packageJson = require("./package.json");
 
 export default [
   {
-    input: [
-      "src/components/Button",
-      "src/components/Input"
-    ],
+    input: 'src/components/Button.tsx',
     output: {
-      dir: 'dist'
+      file: 'outpu1.js',
+      format: 'cjs'
     },
     plugins: [
       peerDepsExternal(),
@@ -22,10 +20,8 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
-      multi()
     ],
     external: ["react", "react-dom", "styled-components"],
-    preserveModules: true,
   },
   {
     input: "dist/esm/types/index.d.ts",
