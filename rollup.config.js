@@ -14,7 +14,7 @@ export default [
       "src/components/Input"
     ],
     output: {
-      dir: 'output'
+      dir: 'dist'
     },
     plugins: [
       peerDepsExternal(),
@@ -25,6 +25,7 @@ export default [
       multi()
     ],
     external: ["react", "react-dom", "styled-components"],
+    preserveModules: true,
   },
   {
     input: "dist/esm/types/index.d.ts",
