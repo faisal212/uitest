@@ -1594,7 +1594,7 @@
   resolved "https://registry.yarnpkg.com/@rollup/plugin-virtual/-/plugin-virtual-2.1.0.tgz#a77bfd0dff74f0203401c75287ff4d1a1cfbc816"
   integrity sha512-CPPAtlKT53HFqC8jFHb/V5WErpU8Hrq2TyCR0A7kPQMlF2wNUf0o1xuAc+Qxj8NCZM0Z3Yvl+FbUXfJjVWqDwA==
 
-"@rollup/pluginutils@^3.1.0":
+"@rollup/pluginutils@^3.0.9", "@rollup/pluginutils@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-3.1.0.tgz#706b4524ee6dc8b103b3c995533e5ad680c02b9b"
   integrity sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
@@ -9512,6 +9512,14 @@ rollup-plugin-peer-deps-external@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/rollup-plugin-peer-deps-external/-/rollup-plugin-peer-deps-external-2.2.4.tgz#8a420bbfd6dccc30aeb68c9bf57011f2f109570d"
   integrity sha512-AWdukIM1+k5JDdAqV/Cxd+nejvno2FVLVeZ74NKggm3Q5s9cbbcOgUPGdbxPi4BXu7xGaZ8HG12F+thImYu/0g==
+
+rollup-plugin-sourcemaps@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-sourcemaps/-/rollup-plugin-sourcemaps-0.6.3.tgz#bf93913ffe056e414419607f1d02780d7ece84ed"
+  integrity sha512-paFu+nT1xvuO1tPFYXGe+XnQvg4Hjqv/eIhG8i5EspfYYPBKL57X7iVbfv55aNVASg3dzWvES9dmWsL2KhfByw==
+  dependencies:
+    "@rollup/pluginutils" "^3.0.9"
+    source-map-resolve "^0.6.0"
 
 rollup-plugin-terser@^7.0.2:
   version "7.0.2"

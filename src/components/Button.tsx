@@ -34,7 +34,7 @@ const StyledButton = styled.button<ButtonProps>`
   }
 `;
 
-const Button: React.FC<ButtonProps> = ({ text, primary, disabled, size, onClick, ...props }) => {
+export const Button: React.FC<ButtonProps> = ({ text, primary, disabled, size, onClick, ...props }) => {
   return (
     <StyledButton
       type="button"
@@ -49,4 +49,3 @@ const Button: React.FC<ButtonProps> = ({ text, primary, disabled, size, onClick,
   );
 };
 
-export default Button;
