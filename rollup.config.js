@@ -13,18 +13,9 @@ export default [
       "src/components/Button",
       "src/components/Input"
     ],
-    output: [
-      {
-        file: packageJson.main,
-        format: "cjs",
-        sourcemap: true,
-      },
-      {
-        file: packageJson.module,
-        format: "esm",
-        sourcemap: true,
-      },
-    ],
+    output: {
+      dir: 'output'
+    },
     plugins: [
       peerDepsExternal(),
       resolve(),
